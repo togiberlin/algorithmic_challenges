@@ -2,8 +2,8 @@ def LetterCountI(str)
     words = str.split(" ")
     hash_map = Hash.new(0)
 
-    words.each do
-      |word| hash_map[word] = count_repeated(word)
+    words.each do |word|
+      hash_map[word] = count_repeated(word)
     end
 
     hash_map.values.max > 0 ? hash_map.key(hash_map.values.max) : -1
