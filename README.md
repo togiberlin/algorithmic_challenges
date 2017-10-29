@@ -7,8 +7,12 @@ Learning, improving and maintaining a programming language is pretty straightfor
 - Grammar
 - Style
 
+*Note: Unfortunately, Coderbyte doesn't stick to Ruby's snake_case convention. You will see mixed usage of camelCase and snake_case.*
+
 ## Essential Ruby Libraries
+As you keep solving problems, you will familiarize with good Ruby libraries.
 - [String](http://ruby-doc.org/core-2.4.2/String.html)
 - [Array](http://ruby-doc.org/core-2.4.2/Array.html)
 - [Enumerable](http://ruby-doc.org/core-2.4.2/Enumerable.html)
+- [Float](https://ruby-doc.org/core-2.4.2/Float.html)
 - tbd..
