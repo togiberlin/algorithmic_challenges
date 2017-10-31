@@ -19,7 +19,7 @@ As you keep solving problems, you will familiarize with useful, basic Ruby libra
 - [Hash](https://ruby-doc.org/core-2.4.2/Hash.html)
 - [Regular Expressions](https://ruby-doc.org/core-2.4.2/Regexp.html)
 
-### Depending on Situation
+### Situational
 - [Float](https://ruby-doc.org/core-2.4.2/Float.html)
 - [Math](https://ruby-doc.org/core-2.4.2/Math.html)
-- [Time](https://ruby-doc.org/core-2.4.2/Time.html) or [DateTime]()
+- [Time](https://ruby-doc.org/core-2.4.2/Time.html)
