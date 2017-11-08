@@ -9,6 +9,12 @@ Learning, improving and maintaining a programming language is pretty straightfor
 
 *Note: Unfortunately, Coderbyte doesn't stick to Ruby's snake_case convention. You will see mixed usage of camelCase and snake_case.*
 
+## How to Practice Programming Language Fluency
+- Solve all easy problems. When stuck, look stuff up.
+- Review your solutions and refactor them.
+- Note down all used methods, make flashcards and memorize expected input and output of relevant methods.
+- Solve all easy problems again *without* looking stuff up. Try to solve each problem *within 10-15 minutes*.
+
 ## Important Ruby Libraries
 As you keep solving problems, you will familiarize with useful, basic Ruby libraries. Below, you will see Ruby libraries, which were used the most for solving problems.
 
@@ -17,7 +23,7 @@ As you keep solving problems, you will familiarize with useful, basic Ruby libra
 - [Array](http://ruby-doc.org/core-2.4.2/Array.html)
 - [Enumerable](http://ruby-doc.org/core-2.4.2/Enumerable.html)
 - [Hash](https://ruby-doc.org/core-2.4.2/Hash.html)
-- [Regular Expressions](https://ruby-doc.org/core-2.4.2/Regexp.html)
+- [Regular Expressions](https://regex101.com/)
 
 ### Situational
 - [Float](https://ruby-doc.org/core-2.4.2/Float.html)
