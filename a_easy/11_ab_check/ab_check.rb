@@ -1,4 +1,4 @@
-def ABCheck(str)
+def ab_check(str)
   bools = []
 
   for n in 0..str.length-1 do
@@ -17,6 +17,3 @@ def ABCheck(str)
     false
   end
 end
-
-# keep this function call here
-puts AlphabetSoup(STDIN.gets)

@@ -1,6 +1,3 @@
-def SwapCase(str)
+def swap_case(str)
   str.swapcase!
 end
-
-# keep this function call here
-puts SwapCase(STDIN.gets)

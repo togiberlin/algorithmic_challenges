@@ -1,4 +1,4 @@
-def LetterCountI(str)
+def letter_count_I(str)
     words = str.split(" ")
     hash_map = Hash.new(0)
 
@@ -14,6 +14,3 @@ def count_repeated(word)
     word.chars { |letter| hash_map[letter] += 1 }
     hash_map.count { |x, y| y > 1 }
 end
-
-# keep this function call here
-puts ArrayAdditionI(STDIN.gets)

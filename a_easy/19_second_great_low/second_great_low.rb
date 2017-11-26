@@ -1,4 +1,4 @@
-def SecondGreatLow(arr)
+def second_great_low(arr)
   arr.uniq!
   arr.sort!
 
@@ -14,6 +14,3 @@ def SecondGreatLow(arr)
     "#{arr[0]} #{arr[1]}"
   end
 end
-
-# keep this function call here
-puts SecondGreatLow(STDIN.gets)

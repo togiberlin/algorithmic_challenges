@@ -1,4 +1,4 @@
-def DashInsert(str)
+def dash_insert(str)
   array = str.split(//)
 
   array.each_index do |index|
@@ -7,6 +7,3 @@ def DashInsert(str)
     end
   end
 end
-
-# keep this function call here
-puts DashInsert(STDIN.gets)

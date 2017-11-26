@@ -1,4 +1,4 @@
-def AdditivePersistence(num)
+def additive_persistence(num)
   i = 0
 
   until num < 10
@@ -7,6 +7,3 @@ def AdditivePersistence(num)
 
   i
 end
-
-# keep this function call here
-puts AdditivePersistence(STDIN.gets)

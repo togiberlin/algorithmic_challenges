@@ -1,4 +1,4 @@
-def CheckNums(num1,num2)
+def check_nums(num1,num2)
   if num1 < num2
     'true'
   elsif num1 == num2
@@ -7,6 +7,3 @@ def CheckNums(num1,num2)
     'false'
   end
 end
-
-# keep this function call here
-puts CheckNums(STDIN.gets)

@@ -1,4 +1,4 @@
-def LetterChanges(str)
+def letter_changes(str)
   str.gsub!(/[a-zA-Z]/) do |char|
     if char == ('z' || 'Z')
       'a'
@@ -9,6 +9,3 @@ def LetterChanges(str)
 
   str.tr!('aeiou', 'AEIOU')
 end
-
-# keep this function call here
-puts LetterChanges(STDIN.gets)

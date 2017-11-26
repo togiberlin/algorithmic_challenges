@@ -1,4 +1,4 @@
-def SimpleSymbols(str)
+def simple_symbols(str)
   bools = []
 
   for n in 0..str.length-1 do
@@ -15,6 +15,3 @@ def SimpleSymbols(str)
 
   bools.all?
 end
-
-# keep this function call here
-puts SimpleSymbols(STDIN.gets)  

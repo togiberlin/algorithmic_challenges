@@ -1,4 +1,4 @@
-def ArithGeo(arr)
+def arith_geo(arr)
   arith, geo = [], []
 
   [*(0..arr.length-2)].each do |n|
@@ -14,6 +14,3 @@ def ArithGeo(arr)
     -1
   end
 end
-
-# keep this function call here
-puts ArithGeo(STDIN.gets)

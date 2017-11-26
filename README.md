@@ -7,8 +7,6 @@ Learning, improving and maintaining a programming language is pretty straightfor
 - Grammar
 - Style
 
-*Note: Unfortunately, Coderbyte doesn't stick to Ruby's snake_case convention. You will see mixed usage of camelCase and snake_case.*
-
 ## How to Practice Programming Language Fluency
 - Solve all easy problems. When stuck, look stuff up.
 - Review your solutions and refactor them.

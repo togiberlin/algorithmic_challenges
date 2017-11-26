@@ -1,4 +1,4 @@
-def TimeConvert(num)
+def time_convert(num)
   if num >= 60
     hours = num / 60
     minutes = num % 60
@@ -7,6 +7,3 @@ def TimeConvert(num)
     '0:' + num.to_s
   end
 end
-
-# keep this function call here
-puts TimeConvert(STDIN.gets)

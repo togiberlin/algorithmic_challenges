@@ -1,10 +1,7 @@
-def FirstFactorial(num)
+def first_factorial(num)
   if num <= 2 # base case
     num
   else # recursive case
-    num * FirstFactorial(num-1)
+    num * first_factorial(num-1)
   end
 end
-
-# keep this function call here
-puts FirstFactorial(STDIN.gets)

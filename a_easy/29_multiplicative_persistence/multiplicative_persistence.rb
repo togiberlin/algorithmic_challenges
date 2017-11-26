@@ -1,4 +1,4 @@
-def MultiplicativePersistence(num)
+def multiplicative_persistence(num)
   i = 0
 
   until num < 10
@@ -7,6 +7,3 @@ def MultiplicativePersistence(num)
 
   i
 end
-
-# keep this function call here
-puts MultiplicativePersistence(STDIN.gets)

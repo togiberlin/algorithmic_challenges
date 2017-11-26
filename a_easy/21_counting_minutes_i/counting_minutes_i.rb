@@ -1,6 +1,6 @@
 require 'time'
 
-def CountingMinutesI(str)
+def counting_minutes_I(str)
   # convert to 24-hour format
   array = str.split('-').map do |time|
     Time.strptime(time, "%I:%M%P").strftime("%H:%M")
@@ -13,6 +13,3 @@ def CountingMinutesI(str)
   (ending - beginning).to_i / 3600 # in hours
   (ending - beginning).to_i / 60 # in minutes
 end
-
-# keep this function call here
-puts CountingMinutesI(STDIN.gets)
