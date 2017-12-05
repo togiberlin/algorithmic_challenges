@@ -17,13 +17,23 @@ Learning, improving and maintaining a programming language is pretty straightfor
 As you keep solving problems, you will familiarize with useful, basic Ruby libraries. Below, you will see Ruby libraries, which were used the most for solving problems.
 
 ### Used Every Time
+#### JavaScript
+- [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+- [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+
+When working on production apps, don't reinvent the wheel:
+- [LoDash](https://lodash.com)
+- [Underscore](http://underscorejs.org/)
+- [Ramda](http://ramdajs.com/docs/)
+
+#### Ruby
 - [String](http://ruby-doc.org/core-2.4.2/String.html)
 - [Array](http://ruby-doc.org/core-2.4.2/Array.html)
 - [Enumerable](http://ruby-doc.org/core-2.4.2/Enumerable.html)
 - [Hash](https://ruby-doc.org/core-2.4.2/Hash.html)
 - [Regular Expressions](https://regex101.com/)
 
-### Situational
+Situational:
 - [Float](https://ruby-doc.org/core-2.4.2/Float.html)
 - [Math](https://ruby-doc.org/core-2.4.2/Math.html)
 - [Time](https://ruby-doc.org/core-2.4.2/Time.html)
