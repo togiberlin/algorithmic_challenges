@@ -1,27 +1,27 @@
 function letterChanges(str) {
   var array = str.split("");
-  var ascii_numbers = [];
+  var asciiNumbers = [];
   var lettersToCapitalize = ["a", "e", "i", "o", "u"];
   var result = [];
 
   // Convert alphabetic characters to ASCII charcode
   for (i = 0; i < array.length; i++) {
     if (/[A-Ya-y]/.test(array[i])) {
-      ascii_numbers.push(array[i].charCodeAt(0));
+      asciiNumbers.push(array[i].charCodeAt(0));
     } else if (array[i] === "z" || array[i] === "Z") {
-      ascii_numbers.push("a");
+      asciiNumbers.push("a");
     } else {
-      ascii_numbers.push(array[i]);
+      asciiNumbers.push(array[i]);
     }
   }
 
   // If it is of type number, increase ASCII charcode by 1
-  for (i = 0; i < ascii_numbers.length; i++) {
-    if (typeof ascii_numbers[i] === 'number') {
-      ascii_numbers[i] += 1;
-      result.push(String.fromCharCode(ascii_numbers[i]));
+  for (i = 0; i < asciiNumbers.length; i++) {
+    if (typeof asciiNumbers[i] === 'number') {
+      asciiNumbers[i] += 1;
+      result.push(String.fromCharCode(asciiNumbers[i]));
     } else {
-      result.push(ascii_numbers[i]);
+      result.push(asciiNumbers[i]);
     }
   }
 
