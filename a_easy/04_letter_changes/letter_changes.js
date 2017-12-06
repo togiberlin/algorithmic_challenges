@@ -26,7 +26,7 @@ function letterChanges(str) {
   }
 
   // Convert array to string
-  result = result.join("")
+  result = result.join("");
 
   // Capitalize all vowels
   lettersToCapitalize.forEach(function(vowel) {
