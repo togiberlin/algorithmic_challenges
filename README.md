@@ -20,9 +20,10 @@ As you keep solving problems, you will familiarize with useful, basic Ruby libra
 #### JavaScript
 - [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 - [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+- [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
 
-When working on production apps, don't reinvent the wheel:
-- [LoDash](https://lodash.com)
+For production apps, these libraries do help a lot:
+- [Lodash](https://lodash.com)
 - [Underscore](http://underscorejs.org/)
 - [Ramda](http://ramdajs.com/docs/)
 
