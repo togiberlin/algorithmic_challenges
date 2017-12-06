@@ -1,9 +1,9 @@
 def check_nums(num1,num2)
   if num1 < num2
-    'true'
+    true
   elsif num1 == num2
-    '-1'
+    -1
   else
-    'false'
+    false
   end
 end
