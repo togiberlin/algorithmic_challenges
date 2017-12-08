@@ -7,6 +7,3 @@ def third_greatest(str_arr)
     return string if string.length == third_greatest_length
   end
 end
-
-# keep this function call here
-puts ThirdGreatest(STDIN.gets)

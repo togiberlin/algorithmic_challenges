@@ -1,4 +1,4 @@
-function CommandLine(str) {
+function commandLine(str) {
   let array = str.split(/[^0-9A-Za-z]*(?=[\s][A-Za-z]*=)/g);
   let result = [];
 
