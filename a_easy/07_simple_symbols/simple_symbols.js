@@ -1,6 +1,6 @@
 function simpleSymbols(str) {
   var bools = [];
-  var array = str.split("")
+  var array = str.split("");
 
   for (i = 0; i < str.length; i++) {
     if (/[A-Za-z]/.test(array[i]) && i !== 0 && i !== array.length) {

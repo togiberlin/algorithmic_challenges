@@ -31,7 +31,7 @@ function letterChanges(str) {
   // Capitalize all vowels
   lettersToCapitalize.forEach(function(vowel) {
     var lowercaseVowel = new RegExp(vowel, "g");
-    result = result.replace(lowercaseVowel, vowel.toUpperCase())
+    result = result.replace(lowercaseVowel, vowel.toUpperCase());
   })
 
   return result;
