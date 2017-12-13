@@ -1,8 +1,8 @@
 function letterChanges(str) {
-  var array = str.split("");
-  var asciiNumbers = [];
-  var lettersToCapitalize = ["a", "e", "i", "o", "u"];
-  var result = [];
+  let array = str.split("");
+  let asciiNumbers = [];
+  let lettersToCapitalize = ["a", "e", "i", "o", "u"];
+  let result = [];
 
   // Convert alphabetic characters to ASCII charcode
   for (i = 0; i < array.length; i++) {
@@ -30,7 +30,7 @@ function letterChanges(str) {
 
   // Capitalize all vowels
   lettersToCapitalize.forEach(function(vowel) {
-    var lowercaseVowel = new RegExp(vowel, "g");
+    let lowercaseVowel = new RegExp(vowel, "g");
     result = result.replace(lowercaseVowel, vowel.toUpperCase());
   })
 

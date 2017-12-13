@@ -1,4 +1,4 @@
-function ASCIIConversion(str) {
+function asciiConversion(str) {
   let array = str.split("");
 
   for (i = 0; i < array.length; i++) {

@@ -1,5 +1,5 @@
 function simpleAdding(num) {
-  var array = [];
+  let array = [];
 
   while (num !== 0) {
     array.push(num);

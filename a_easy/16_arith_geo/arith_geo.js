@@ -1,6 +1,6 @@
 function arithGeo(arr) {
-  var arith = [];
-  var geo = [];
+  let arith = [];
+  let geo = [];
 
   for (i = 0; i < arr.length - 1; i++) {
     arith.push(arr[i + 1] - arr[i]);

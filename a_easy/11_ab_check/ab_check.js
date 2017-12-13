@@ -1,6 +1,6 @@
 function abCheck(str) {
-  var array = str.split("");
-  var bools = [];
+  let array = str.split("");
+  let bools = [];
 
   for (i = 0; i < array.length; i++) {
     if (array[i] === "a") {
