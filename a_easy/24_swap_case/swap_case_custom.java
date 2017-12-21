@@ -15,12 +15,12 @@ class Main {
     char[] charArray = str.toCharArray();
 
     for (int i = 0; i < len; i++) {
-      char ch = charArray[i];
+      char character = charArray[i];
 
-      if (Character.isUpperCase(ch)) {
-        charArray[i] = Character.toLowerCase(ch);
-      } else if (Character.isLowerCase(ch)) {
-        charArray[i] = Character.toUpperCase(ch);
+      if (Character.isUpperCase(character)) {
+        charArray[i] = Character.toLowerCase(character);
+      } else if (Character.isLowerCase(character)) {
+        charArray[i] = Character.toUpperCase(character);
       }
     }
 
