@@ -4,9 +4,9 @@ function serialNumber(str) {
 
   if (!match) { return false; } // 1st condition
 
-  let firstSet = match[1].split("").map((elem) => parseInt(elem));
-  let secondSet = match[2].split("").map((elem) => parseInt(elem));
-  let thirdSet = match[3].split("").map((elem) => parseInt(elem));
+  let firstSet = match[1].split("").map(elem => parseInt(elem));
+  let secondSet = match[2].split("").map(elem => parseInt(elem));
+  let thirdSet = match[3].split("").map(elem => parseInt(elem));
 
   if (firstSet.reduce((a, b) => a + b) % 2 !== 0) { return false; } // 2nd condition
   if (secondSet.reduce((a, b) => a + b) % 2 === 0) { return false; } // 3rd condition
