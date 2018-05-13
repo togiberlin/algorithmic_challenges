@@ -1,6 +1,6 @@
-function stringMerge(str) { 
-  let array = str.split("*");
-  let result = [];
+const stringMerge = str => {
+  const array = str.split('*');
+  const result = [];
 
   for (i = 0; i < array.length - 1; i++) {
     for (n = 0; n < array[i].length; n++) {
@@ -8,5 +8,7 @@ function stringMerge(str) {
     }
   }
 
-  return result.join("");
-}
+  return result.join('');
+};
+
+module.exports = stringMerge;

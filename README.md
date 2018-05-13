@@ -7,12 +7,12 @@ tbd
 
 ## JavaScript
 ```bash
-  $ npm install  # installing Node modules
-  $ npm run test # executing tests
+  $ npm install  # install Node modules
+  $ npm run test # execute tests
 ```
 
 ## Ruby
 ```bash
-  $ bundle install                    # installing Ruby gems
-  $ rspec --pattern **/spec/*_spec.rb # executing tests
+  $ bundle install                    # install Ruby gems
+  $ rspec --pattern **/spec/*_spec.rb # execute tests
 ```

@@ -1,5 +1,5 @@
-function simpleEvens(num) {
-  let array = num.toString().split("");
+const simpleEvens = num => {
+  const array = num.toString().split('');
 
   for (i = 0; i < array.length; i++) {
     array[i] = array[i] % 2 === 0;
@@ -10,4 +10,6 @@ function simpleEvens(num) {
   } else {
     return true;
   }
-}
+};
+
+module.exports = simpleEvens;

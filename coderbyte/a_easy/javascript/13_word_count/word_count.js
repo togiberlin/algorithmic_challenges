@@ -1,3 +1,5 @@
-function wordCount(str) {
-  return str.split(" ").length;
-}
+const wordCount = str => {
+  return str.split(' ').length;
+};
+
+module.exports = wordCount;

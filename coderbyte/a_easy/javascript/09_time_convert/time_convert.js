@@ -1,7 +1,9 @@
-function timeConvert(num) {
+const timeConvert = num => {
   if (num >= 60) {
-    return Math.floor((num / 60)).toString() + ":" + (num % 60).toString();
+    return Math.floor((num / 60)).toString() + ':' + (num % 60).toString();
   } else {
-    return "0:" + num;
+    return '0:' + num;
   }
-}
+};
+
+module.exports = timeConvert;

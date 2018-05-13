@@ -1,5 +1,5 @@
-function changingSequence(arr) { 
-  let increasingSequence = arr[0] < arr[1] ? true : false;
+const changingSequence = arr => {
+  const increasingSequence = arr[0] < arr[1] ? true : false;
 
   if (increasingSequence) {
     for (i = 0; i < arr.length; i++) {
@@ -12,4 +12,6 @@ function changingSequence(arr) {
   }
 
   return -1;
-}
+};
+
+module.exports = changingSequence;

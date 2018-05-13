@@ -1,6 +1,6 @@
-function sumMultiplier(arr) {
-  let combinations = [];
-  let minimumThreshold = arr.reduce((a, b) => a + b) * 2;
+const sumMultiplier = arr => {
+  const combinations = [];
+  const minimumThreshold = arr.reduce((a, b) => a + b) * 2;
 
   // Remove duplicates
   arr = arr.filter((elem, index, self) => index === self.indexOf(elem));
@@ -19,7 +19,7 @@ function sumMultiplier(arr) {
   combinations = combinations.filter((elem, index, self) => index === self.indexOf(elem));
 
   // Determine, whether at least 2 values are above threshold
-  function hasTwoValsOverThreshold(productArray) {
+  const hasTwoValsOverThreshold = productArray => {
     let counter = 0;
 
     for (i = 0; i < productArray.length; i++) {
@@ -29,7 +29,9 @@ function sumMultiplier(arr) {
     }
 
     return counter >= 2 ? true : false;
-  }
+  };
 
   return hasTwoValsOverThreshold(combinations);
-}
+};
+
+module.exports = sumMultiplier;

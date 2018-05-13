@@ -1,4 +1,4 @@
-function elementMerger(arr) {
+const elementMerger = arr => {
   // Base case
   if (arr.length === 1) { return arr[0]; }
 
@@ -6,8 +6,10 @@ function elementMerger(arr) {
   for (i = 0; i < arr.length; i++) {
     arr[i] = Math.abs(arr[i + 1] - arr[i]);
   }
-  
+
   arr.pop();
 
   return elementMerger(arr);
-}
+};
+
+module.exports = elementMerger;

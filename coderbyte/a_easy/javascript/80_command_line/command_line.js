@@ -1,17 +1,19 @@
-function commandLine(str) {
-  let array = str.split(/[^0-9A-Za-z]*(?=[\s][A-Za-z]*=)/g);
-  let result = [];
+const commandLine = str => {
+  const array = str.split(/[^0-9A-Za-z]*(?=[\s][A-Za-z]*=)/g);
+  const result = [];
 
   for (i=0; i < array.length; i++) {
-    let tokenValuesRegex = /([A-Za-z]*)=([A-Za-z\s\d.:;(){}/]*)/g;
-    let match = tokenValuesRegex.exec(array[i]);
+    const tokenValuesRegex = /([A-Za-z]*)=([A-Za-z\s\d.:;(){}/]*)/g;
+    const match = tokenValuesRegex.exec(array[i]);
 
     try {
-      result.push(match[1].length + "=" + match[2].length);
+      result.push(match[1].length + '=' + match[2].length);
     } catch (err) {
-      return "Sorry, you have not passed a valid string.";
+      return 'Sorry, you have not passed a valid string.';
     }
   }
 
-  return result.join(" ");
-}
+  return result.join(' ');
+};
+
+module.exports = commandLine;

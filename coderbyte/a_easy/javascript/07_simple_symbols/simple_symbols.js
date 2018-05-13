@@ -1,10 +1,12 @@
-function simpleSymbols(str) {
-  let bools = [];
-  let array = str.split("");
+const simpleSymbols = str => {
+  const bools = [];
+  const array = str.split('');
+
+  if (array.length <= 2) return false;
 
   for (i = 0; i < str.length; i++) {
     if (/[A-Za-z]/.test(array[i]) && i !== 0 && i !== array.length) {
-      if (array[i - 1] === "+" && array[i + 1] === "+") {
+      if (array[i - 1] === '+' && array[i + 1] === '+') {
         bools.push(true);
       } else {
         bools.push(false);
@@ -12,5 +14,7 @@ function simpleSymbols(str) {
     }
   }
 
-  return !bools.includes(false)
-}
+  return !bools.includes(false);
+};
+
+module.exports = simpleSymbols;

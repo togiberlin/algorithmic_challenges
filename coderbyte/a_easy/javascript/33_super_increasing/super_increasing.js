@@ -1,4 +1,4 @@
-function superIncreasing(arr) {
+const superIncreasing = arr => {
   let sum = 0;
 
   for (i = 0; i < arr.length; i++) {
@@ -9,4 +9,6 @@ function superIncreasing(arr) {
   }
 
   return true;
-}
+};
+
+module.exports = superIncreasing;

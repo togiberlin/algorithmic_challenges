@@ -1,15 +1,15 @@
-function letterChanges(str) {
-  let array = str.split("");
-  let asciiNumbers = [];
-  let lettersToCapitalize = ["a", "e", "i", "o", "u"];
+const letterChanges = str => {
+  const array = str.split('');
+  const lettersToCapitalize = ['a', 'e', 'i', 'o', 'u'];
+  const asciiNumbers = [];
   let result = [];
 
   // Convert alphabetic characters to ASCII charcode
   for (i = 0; i < array.length; i++) {
     if (/[A-Ya-y]/.test(array[i])) {
       asciiNumbers.push(array[i].charCodeAt(0));
-    } else if (array[i] === "z" || array[i] === "Z") {
-      asciiNumbers.push("a");
+    } else if (array[i] === 'z' || array[i] === 'Z') {
+      asciiNumbers.push('a');
     } else {
       asciiNumbers.push(array[i]);
     }
@@ -26,13 +26,15 @@ function letterChanges(str) {
   }
 
   // Convert array to string
-  result = result.join("");
+  result = result.join('');
 
   // Capitalize all vowels
-  lettersToCapitalize.forEach(function(vowel) {
-    let lowercaseVowel = new RegExp(vowel, "g");
+  lettersToCapitalize.forEach(vowel => {
+    let lowercaseVowel = new RegExp(vowel, 'g');
     result = result.replace(lowercaseVowel, vowel.toUpperCase());
-  })
+  });
 
   return result;
-}
+};
+
+module.exports = letterChanges;

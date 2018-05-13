@@ -1,5 +1,5 @@
-function swapCase(string, length) {
-  let array = string.split("");
+const swapCase = (string, length) => {
+  const array = string.split('');
 
   for (i = 0; i < length; i++) {
     if (array[i].match(/[a-z]/)) {
@@ -9,5 +9,7 @@ function swapCase(string, length) {
     }
   }
 
-  return array.join("");
-}
+  return array.join('');
+};
+
+module.exports = swapCase;

@@ -1,7 +1,9 @@
-function letterCapitalize(str) {
-  let array = str.split(" ");
+const letterCapitalize = str => {
+  const array = str.split(' ');
 
-  return array.map(function(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1, string.length);
-  }).join(" ");
-}
+  return array.map(word => {
+    return word.charAt(0).toUpperCase() + word.slice(1, word.length);
+  }).join(' ');
+};
+
+module.exports = letterCapitalize;
