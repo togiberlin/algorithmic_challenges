@@ -1,4 +1,5 @@
-const letterCapitalize = require('../06_letter_capitalize/letter_capitalize.js');
+const letterCapitalize =
+  require('../06_letter_capitalize/letter_capitalize.js');
 
 describe('letterCapitalize', () => {
   test('\'hello world\' returns \'Hello World\'', () => {

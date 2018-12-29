@@ -1,7 +1,7 @@
-const asciiConversion = str => {
+const asciiConversion = (str) => {
   const array = str.split('');
 
-  for (i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     if (!/[ ]/.test(array[i])) {
       array[i] = array[i].charCodeAt(0);
     }

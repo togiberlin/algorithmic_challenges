@@ -1,7 +1,7 @@
-const swapCase = (string, length) => {
+const swapCase = (string, offset) => {
   const array = string.split('');
 
-  for (i = 0; i < length; i++) {
+  for (let i = 0; i < offset; i++) {
     if (array[i].match(/[a-z]/)) {
       array[i] = array[i].toUpperCase();
     } else if (array[i].match(/[A-Z]/)) {

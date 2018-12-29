@@ -1,11 +1,11 @@
-const bitwiseOne = strArr => {
-  strArr = strArr.map(elem => elem.split(''));
+const bitwiseOne = (strArr) => {
+  const input = strArr.map((elem) => elem.split(''));
 
-  for (i = 0; i < strArr[0].length; i++) {
-    strArr[0][i] = parseInt(strArr[0][i]) || parseInt(strArr[1][i]);
+  for (let i = 0; i < input[0].length; i++) {
+    input[0][i] = parseInt(input[0][i]) || parseInt(input[1][i]);
   }
 
-  return strArr[0].join('');
+  return input[0].join('');
 };
 
 module.exports = bitwiseOne;

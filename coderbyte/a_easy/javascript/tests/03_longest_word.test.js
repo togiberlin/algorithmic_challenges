@@ -21,7 +21,7 @@ describe('longestWord', () => {
     expect(longestWord('oxford press')).toBe('oxford');
   });
 
-  test('picks the first number in a sentence with two equally long numbers', () => {
+  test('picks the 1st number in sentence with two equally long numbers', () => {
     expect(longestWord('123456789 98765432')).toBe('123456789');
   });
 
@@ -33,7 +33,8 @@ describe('longestWord', () => {
     expect(longestWord('a b c dee')).toBe('dee');
   });
 
-  test('picks the longest word in a sentence with lots of special characters', () => {
-    expect(longestWord('a confusing /:sentence:/[ this is not!!!!!!!~')).toBe('confusing');
+  test('picks the longest word in sentence with special characters', () => {
+    expect(longestWord('a confusing /:sentence:/[ this is not!!!!!!!~'))
+        .toBe('confusing');
   });
 });

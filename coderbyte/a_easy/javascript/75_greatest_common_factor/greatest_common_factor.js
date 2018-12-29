@@ -1,8 +1,8 @@
-const gcf = arr => {
+const gcf = (arr) => {
   const maximum = Math.max(...arr);
   const minimum = Math.min(...arr);
 
-  for (i = minimum; i > 0; i--) {
+  for (let i = minimum; i > 0; i--) {
     if (maximum % i === 0 && minimum % i === 0) {
       return i;
     }

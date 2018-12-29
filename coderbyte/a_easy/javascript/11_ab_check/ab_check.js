@@ -1,8 +1,8 @@
-const abCheck = str => {
+const abCheck = (str) => {
   const array = str.split('');
   const bools = [];
 
-  for (i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     if (array[i] === 'a') {
       if (array[i + 4] === 'b') {
         bools.push(true);

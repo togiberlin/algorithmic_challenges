@@ -1,17 +1,19 @@
-function countBs(string) {
+const countBs = (string) => {
   return string.match(/[B]/g).length;
-}
+};
 
-countBs("B This B bb string contains B exactly bbb 7 uppercase B's. BBB")
+countBs('B This B bb string contains B exactly bbb 7 uppercase B. BBB');
 
-function countChar(string, char) {
+const countChar = (string, char) => {
   let count = 0;
 
   for (i = 0; i < string.length; i++) {
-    if (string.charAt(i) === char) { count++; }
+    if (string.charAt(i) === char) {
+      count++;
+    }
   }
 
   return count;
-}
+};
 
-countChar("Hello world!", "o");
+countChar('Hello world!', 'o');

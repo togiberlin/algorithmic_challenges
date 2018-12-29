@@ -1,4 +1,4 @@
-const simpleAdding = num => {
+const simpleAdding = (num) => {
   const array = [];
 
   while (num !== 0) {

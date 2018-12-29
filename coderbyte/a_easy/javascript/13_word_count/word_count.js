@@ -1,4 +1,4 @@
-const wordCount = str => {
+const wordCount = (str) => {
   return str.split(' ').length;
 };
 

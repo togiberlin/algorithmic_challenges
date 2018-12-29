@@ -1,7 +1,7 @@
-const swapCase = str => {
+const swapCase = (str) => {
   const array = str.split('');
 
-  for (i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     if (array[i].match(/[A-Z]/)) {
       array[i] = array[i].toLowerCase();
     } else if (array[i].match(/[a-z]/)) {

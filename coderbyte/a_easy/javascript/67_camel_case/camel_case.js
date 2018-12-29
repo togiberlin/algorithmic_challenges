@@ -1,8 +1,8 @@
-const camelCase = str => {
-  const str = str.replace(/[%*-]+/g, ' ');
-  const array = str.toLowerCase().split(' ');
+const camelCase = (str) => {
+  const input = str.replace(/[%*-]+/g, ' ');
+  const array = input.toLowerCase().split(' ');
 
-  for (i = 1; i < array.length; i++) {
+  for (let i = 1; i < array.length; i++) {
     array[i] = array[i][0].toUpperCase() + array[i].slice(1, array[i].length);
   }
 

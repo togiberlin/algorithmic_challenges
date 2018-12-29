@@ -1,4 +1,4 @@
-const removeBrackets = str => {
+const removeBrackets = (str) => {
   const openingBrackets = str.match(/([(])/g).length;
   const closingBrackets = str.match(/([)])/g).length;
 

@@ -1,4 +1,4 @@
-const starRating = str => {
+const starRating = (str) => {
   const stars = parseFloat(str);
   const result = [];
 

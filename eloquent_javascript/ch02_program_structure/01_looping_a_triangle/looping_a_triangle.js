@@ -1,11 +1,11 @@
-function loopingTriangle() {
-  let result = "";
+const loopingTriangle = () => {
+  let result = '';
 
-  for (i = 0; i < 7; i++) {
-    result += "#";
+  for (let i = 0; i < 7; i++) {
+    result += '#';
 
     console.log(result);
   }
-}
+};
 
 loopingTriangle();

@@ -1,7 +1,7 @@
-const simpleEvens = num => {
+const simpleEvens = (num) => {
   const array = num.toString().split('');
 
-  for (i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     array[i] = array[i] % 2 === 0;
   }
 

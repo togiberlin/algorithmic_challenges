@@ -1,7 +1,7 @@
-const palindromeSwapper = str => {
+const palindromeSwapper = (str) => {
   const array = str.split('');
 
-  for (i = 0; i < array.length - 1; i++) {
+  for (let i = 0; i < array.length - 1; i++) {
     // .slice() creates a copy and prevents changes to original array
     const swapArray = array.slice();
 

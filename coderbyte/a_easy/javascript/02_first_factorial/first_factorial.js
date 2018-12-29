@@ -1,4 +1,4 @@
-const firstFactorial = num => {
+const firstFactorial = (num) => {
   if (num <= 2) {
     return num;
   } else {

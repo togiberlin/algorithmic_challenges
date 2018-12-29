@@ -1,22 +1,22 @@
-function range(start, end, step = 1) {
-  let array = [];
+const range = (start, end, step = 1) => {
+  const array = [];
 
   if (step >= 0) {
-    for (i = start; i <= end; i += step) {
+    for (let i = start; i <= end; i += step) {
       array.push(i);
     }
   } else if (step < 0) {
-    for (i = start; i >= end; i += step) {
+    for (let i = start; i >= end; i += step) {
       array.push(i);
     }
   }
 
   return array;
-}
+};
 
-function sum(array) {
+const sum = (array) => {
   return array.reduce((a, b) => a + b);
-}
+};
 
 range(1, 10); // creates array of 1 to 10
 sum(range(1, 10)); // returns 55

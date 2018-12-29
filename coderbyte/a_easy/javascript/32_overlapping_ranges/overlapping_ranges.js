@@ -1,4 +1,4 @@
-const overlappingRanges = arr => {
+const overlappingRanges = (arr) => {
   const setA = [arr[0], arr[1]];
   const setB = [arr[2], arr[3]];
   const overlapRange = arr.reverse().shift();

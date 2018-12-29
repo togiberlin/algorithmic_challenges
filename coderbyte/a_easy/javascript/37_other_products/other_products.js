@@ -1,7 +1,7 @@
-const otherProducts = arr => {
+const otherProducts = (arr) => {
   const result = [];
 
-  for (i = 0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     result.push(arr.reduce((a, b) => a * b) / arr[i]);
   }
 

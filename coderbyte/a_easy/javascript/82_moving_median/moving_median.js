@@ -1,19 +1,21 @@
-const movingMedian = arr => {
+const movingMedian = (arr) => {
   const windowSize = arr.shift();
   const array = [];
   const result = [];
 
-  for (i=0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     array.push(arr[i]);
 
     const currentWindow = array.slice(0, arr.length);
 
-    if (array.length >= windowSize) { array.shift(); }
+    if (array.length >= windowSize) {
+      array.shift();
+    }
 
     result.push(currentWindow);
   }
 
-  return result.map(function(elem){
+  return result.map((elem) => {
     if (elem.length !== windowSize) {
       return elem.reduce((a, b) => a + b, 0) / elem.length;
     } else {

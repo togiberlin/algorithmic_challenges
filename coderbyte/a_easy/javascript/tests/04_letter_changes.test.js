@@ -33,7 +33,9 @@ describe('letterChanges', () => {
     expect(letterChanges('a b c dee')).toBe('b c d Eff');
   });
 
-  test('\'a confusing /:sentence:/[ this is not!!!!!!!~\' returns \'b dpOgvtjOh /:tfOUfOdf:/[ UIjt jt OpU!!!!!!!~\'', () => {
-    expect(letterChanges('a confusing /:sentence:/[ this is not!!!!!!!~')).toBe('b dpOgvtjOh /:tfOUfOdf:/[ UIjt jt OpU!!!!!!!~');
+  test('\'a confusing /:sentence:/[ this is not!!!!!!!~\' returns' +
+    '\'b dpOgvtjOh /:tfOUfOdf:/[ UIjt jt OpU!!!!!!!~\'', () => {
+    expect(letterChanges('a confusing /:sentence:/[ this is not!!!!!!!~'))
+        .toBe('b dpOgvtjOh /:tfOUfOdf:/[ UIjt jt OpU!!!!!!!~');
   });
 });

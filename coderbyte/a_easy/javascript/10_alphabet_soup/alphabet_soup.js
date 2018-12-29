@@ -1,4 +1,4 @@
-const alphabetSoup = str => {
+const alphabetSoup = (str) => {
   return str.split('').sort().join('');
 };
 

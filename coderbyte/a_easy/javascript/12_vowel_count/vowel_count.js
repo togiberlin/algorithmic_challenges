@@ -1,6 +1,6 @@
-const vowelCount = str => {
-  str.replace(/[^A-Za-z]/g, '');
-  let vowels = str.match(/[aeiou]/gi);
+const vowelCount = (str) => {
+  const input = str.replace(/[^A-Za-z]/g, '');
+  const vowels = input.match(/[aeiou]/gi);
 
   if (vowels) {
     return vowels.length;

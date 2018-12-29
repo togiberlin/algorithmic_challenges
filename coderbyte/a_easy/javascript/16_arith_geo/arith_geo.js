@@ -1,8 +1,8 @@
-const arithGeo = arr => {
+const arithGeo = (arr) => {
   const arith = [];
   const geo = [];
 
-  for (i = 0; i < arr.length - 1; i++) {
+  for (let i = 0; i < arr.length - 1; i++) {
     arith.push(arr[i + 1] - arr[i]);
     geo.push(arr[i + 1] / arr[i]);
   }
@@ -19,3 +19,5 @@ const arithGeo = arr => {
     return -1;
   }
 };
+
+module.exports = arithGeo;
