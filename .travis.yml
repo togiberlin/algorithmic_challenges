@@ -17,4 +17,4 @@ matrix:
       before_script:
         - bundle install
       script:
-        - bundle exec rspec --pattern **/spec/*_spec.rb
+        - bundle exec rubocop && bundle exec rspec
