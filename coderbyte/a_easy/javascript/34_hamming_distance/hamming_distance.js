@@ -1,10 +1,10 @@
 const hammingDistance = (strArr) => {
-  strArr = strArr.map((elem) => elem.split(''));
+  const input = strArr.map((elem) => elem.split(''));
   let counter = 0;
 
   for (let i = 0; i < 1; i++) {
-    for (n = 0; n < strArr[i].length; n++) {
-      if (strArr[i][n] !== strArr[i + 1][n]) {
+    for (let n = 0; n < input[i].length; n++) {
+      if (input[i][n] !== input[i + 1][n]) {
         counter++;
       }
     }

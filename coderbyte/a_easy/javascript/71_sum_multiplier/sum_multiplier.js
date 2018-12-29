@@ -3,12 +3,12 @@ const sumMultiplier = (arr) => {
   const minimumThreshold = arr.reduce((a, b) => a + b) * 2;
 
   // Remove duplicates
-  arr = arr.filter((elem, index, self) => index === self.indexOf(elem));
+  const input = arr.filter((elem, index, self) => index === self.indexOf(elem));
 
   // Make repeated combinations
-  for (let i = 0; i < arr.length; i++) {
-    for (n = 0; n < arr.length; n++) {
-      combinations.push([arr[i], arr[n]]);
+  for (let i = 0; i < input.length; i++) {
+    for (n = 0; n < input.length; n++) {
+      combinations.push([input[i], input[n]]);
     }
   }
 
