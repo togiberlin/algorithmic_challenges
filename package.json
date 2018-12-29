@@ -10,16 +10,15 @@
     "jest": "^22.4.4"
   },
   "devEngines": {
-    "node": "8.x || 9.x"
+    "node": "9.x || 10.x || 11.x"
   },
   "scripts": {
-    "test": "jest",
+    "test": "eslint **/*.js && jest",
     "lint": "eslint **/*.js"
   },
   "author": "togiberlin",
   "license": "MIT",
   "jest": {
     "testURL": "http://localhost/"
-  },
-  "dependencies": {}
+  }
 }

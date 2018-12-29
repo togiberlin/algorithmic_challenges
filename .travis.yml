@@ -1,0 +1,18 @@
+matrix:
+  include:
+    - language: node_js
+      node_js:
+        - "10"
+      before_script:
+        - npm install
+      script:
+        - npm run test
+
+    - language: ruby
+      ruby: 2.5.3
+      gemfile:
+        - Gemfile
+      before_script:
+        - bundle install
+      script:
+        - rspec --pattern **/spec/*_spec.rb
