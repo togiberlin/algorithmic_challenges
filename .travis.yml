@@ -3,16 +3,16 @@ matrix:
     - language: node_js
       node_js:
         - "node"
-      before_script:
-        - npm install
       cache:
         directories:
           - "node_modules"
+      before_script:
+        - npm install
       script:
         - npm test
 
     - language: ruby
-      ruby: 2.5.3
+      rvm: 2.5.3
       gemfile:
         - Gemfile
       before_script:
