@@ -2,11 +2,14 @@ matrix:
   include:
     - language: node_js
       node_js:
-        - "10"
+        - "node"
       before_script:
         - npm install
+      cache:
+        directories:
+          - "node_modules"
       script:
-        - npm run test
+        - npm test
 
     - language: ruby
       ruby: 2.5.3
