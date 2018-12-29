@@ -13,9 +13,8 @@ matrix:
 
     - language: ruby
       rvm: 2.5.3
-      gemfile:
-        - Gemfile
+      cache: bundler
       before_script:
         - bundle install
       script:
-        - rspec --pattern **/spec/*_spec.rb
+        - bundle exec rspec --pattern **/spec/*_spec.rb
