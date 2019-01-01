@@ -1,3 +1,3 @@
 def number_addition(str)
-  str.split(/[a-zA-Z\s]+/).map(&:to_i).sum
+  str.split(/[a-zA-Z\s]+/).map(&:to_i).reduce(:+)
 end

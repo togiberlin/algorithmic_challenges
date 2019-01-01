@@ -6,4 +6,6 @@ def dash_insert(str)
       array.insert(index + 1, '-')
     end
   end
+
+  array.join('')
 end

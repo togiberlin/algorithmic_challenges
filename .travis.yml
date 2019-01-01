@@ -17,4 +17,4 @@ matrix:
       before_script:
         - bundle install
       script:
-        - bundle exec rubocop && bundle exec rspec
+        - bundle exec rspec
