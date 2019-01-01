@@ -28,6 +28,8 @@ GEM
       rainbow (>= 1.99.1, < 3.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (~> 1.0, >= 1.0.1)
+    rubocop-rspec (1.15.1)
+      rubocop (>= 0.42.0)
     ruby-progressbar (1.8.1)
     unicode-display_width (1.2.1)
 
@@ -37,6 +39,7 @@ PLATFORMS
 DEPENDENCIES
   rspec
   rubocop
+  rubocop-rspec
 
 BUNDLED WITH
-   1.12.5
+   1.17.2

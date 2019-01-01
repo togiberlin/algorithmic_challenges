@@ -1,4 +1,4 @@
-def check_nums(num1,num2)
+def check_nums(num1, num2)
   if num1 < num2
     true
   elsif num1 == num2

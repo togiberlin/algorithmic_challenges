@@ -11,7 +11,7 @@
 ## Ruby [![Build Status](https://travis-matrix-badges.herokuapp.com/repos/togiberlin/algorithmic_challenges/branches/master/2)](https://travis-ci.org/togiberlin/algorithmic_challenges)
 ```bash
   $ bundle install # install Ruby gems
-  $ bundle exec rubocop && bundle exec rspec --pattern **/spec/*.rb # execute Rubocop & tests
+  $ bundle exec rubocop && bundle exec rspec # execute Rubocop & RSpec tests
 ```
 
 ## Go

@@ -1,3 +1,3 @@
 def letter_capitalize(str)
-  str.split.map { |word| word.capitalize }.join(' ')
+  str.split.map(&:capitalize).join(' ')
 end

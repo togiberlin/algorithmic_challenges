@@ -1,9 +1,3 @@
-class Coderbyte
-  def initialize(string)
-    @string = string
-  end
-
-  def first_reverse
-    @string.reverse
-  end
+def first_reverse(string)
+  string.reverse
 end

@@ -1,19 +1,13 @@
 def ab_check(str)
   bools = []
 
-  for n in 0..str.length-1 do
-    if str[n] == 'a'
-      if str[n + 4] == 'b'
-        bools << true
-      else
-        bools << false
-      end
-    elsif str[n] == 'b'
-      if str[n + 4] == 'a'
-        bools << true
-      else
-        bools << false
-      end
+  for n in 0..str.length - 1 do
+    if str[n] == 'a' && str[n + 4] == 'b'
+      bools << true
+    elsif str[n] == 'b' && str[n + 4] == 'a'
+      bools << true
+    else
+      bools << false
     end
   end
 
