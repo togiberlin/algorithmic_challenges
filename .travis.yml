@@ -18,3 +18,8 @@ matrix:
         - bundle install
       script:
         - bundle exec rspec
+
+    - language: java
+      script:
+        - cd coderbyte/a_easy/java
+        - mvn test clean

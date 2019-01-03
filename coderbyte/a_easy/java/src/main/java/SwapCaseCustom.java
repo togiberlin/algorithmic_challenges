@@ -1,14 +1,16 @@
-class Main {
+package com.coderbyte.easy.java.swapcase;
+
+class SwapCaseCustom {
 
   /**
-  * This is a reimplemented SwapCase method in Java.
-  * Compared to regular SwapCase method, it takes a len parameter.
-  *
+  * Have the function swapCase(str) take the str parameter and swap the case
+  * of each character. For example: if str is "Hello World" the output should
+  * be hELLO wORLD. Let numbers and symbols stay the way they are.
   * @author togiberlin
   */
 
   public static void main(String[] args) {
-    System.out.println(swapCase("Hello World!", 6));
+    // System.out.println(swapCase("Hello World!", 6));
   }
 
   public static String swapCase(String str, int len) {

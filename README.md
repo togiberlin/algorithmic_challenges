@@ -5,7 +5,7 @@
 ## JavaScript [![Build Status](https://travis-matrix-badges.herokuapp.com/repos/togiberlin/algorithmic_challenges/branches/master/1)](https://travis-ci.org/togiberlin/algorithmic_challenges)
 ```bash
   $ npm install # install Node modules
-  $ npm run test # execute ESLint & tests
+  $ npm run test # execute ESLint (Google config) & tests
 ```
 
 ## Ruby [![Build Status](https://travis-matrix-badges.herokuapp.com/repos/togiberlin/algorithmic_challenges/branches/master/2)](https://travis-ci.org/togiberlin/algorithmic_challenges)
@@ -14,11 +14,17 @@
   $ bundle exec rubocop && bundle exec rspec # execute Rubocop & RSpec tests
 ```
 
-## Go
-tbd
+## Java [![Build Status](https://travis-matrix-badges.herokuapp.com/repos/togiberlin/algorithmic_challenges/branches/master/3)](https://travis-ci.org/togiberlin/algorithmic_challenges)
+```bash
+  $ mvn test clean # Run all jUnit tests and clean up target directory
+```
 
-## Java
-pom.xml, Maven tbd
+## Go
+```bash
+  $ tbd
+```
 
 ## Haskell
-tbd
+```bash
+  $ tbd
+```
