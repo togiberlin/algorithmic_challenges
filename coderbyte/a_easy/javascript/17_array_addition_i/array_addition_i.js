@@ -16,21 +16,21 @@ const arrayAdditionI = (arr) => {
     return result = sums.includes(max);
   };
 
-  const generateSubsets = (superset) => {
+  const generatePowerSets = (superset) => {
     try {
-      const generatedSubsets = superset.reduce((subsets, value) => {
+      const generatedPowerSets = superset.reduce((subsets, value) => {
         return subsets.concat(subsets.map((set) => {
           return [value, ...set];
         }));
       }, [[]]);
 
-      return calculateResult(generatedSubsets);
+      return calculateResult(generatedPowerSets);
     } catch (err) {
       return err;
     }
   };
 
-  generateSubsets(input);
+  generatePowerSets(input);
 
   return result;
 };

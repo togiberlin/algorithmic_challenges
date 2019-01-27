@@ -1,24 +1,14 @@
 const abCheck = (str) => {
   const array = str.split('');
-  const bools = [];
 
   for (let i = 0; i < array.length; i++) {
-    if (array[i] === 'a') {
-      if (array[i + 4] === 'b') {
-        bools.push(true);
-      } else {
-        bools.push(false);
-      }
-    } else if (array[i] === 'b') {
-      if (array[i + 4] === 'a') {
-        bools.push(true);
-      } else {
-        bools.push(false);
-      }
+    if (array[i] === 'a' && array[i + 4] === 'b' ||
+      array[i] === 'b' && array[i + 4] === 'a') {
+      return true;
     }
   }
 
-  return bools.includes(true);
+  return false;
 };
 
 module.exports = abCheck;

@@ -13,7 +13,7 @@ class SwapCaseCustom {
     // System.out.println(swapCase("Hello World!", 6));
   }
 
-  public static String swapCase(String str, int len) {
+  public static String swapCaseCustom(String str, int len) {
     char[] charArray = str.toCharArray();
 
     for (int i = 0; i < len; i++) {

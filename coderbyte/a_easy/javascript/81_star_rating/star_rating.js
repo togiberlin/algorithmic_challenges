@@ -1,5 +1,5 @@
 const starRating = (str) => {
-  const stars = parseFloat(str);
+  let stars = parseFloat(str);
   const result = [];
 
   while (stars >= 1) {

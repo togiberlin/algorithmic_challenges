@@ -3,7 +3,7 @@ const commandLine = (str) => {
   const result = [];
 
   for (let i = 0; i < array.length; i++) {
-    const tokenValuesRegex = /([A-Za-z]*)=([A-Za-z\s\d.:;(){}/]*)/g;
+    const tokenValuesRegex = /([A-Za-z]*)=([A-Za-z\s\d.:;(){}\/]*)/g;
     const match = tokenValuesRegex.exec(array[i]);
 
     try {
