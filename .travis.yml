@@ -10,15 +10,13 @@ matrix:
         - npm install
       script:
         - npm test
-
     - language: ruby
-      rvm: 2.5.3
+      rvm: 2.6.0
       cache: bundler
       before_script:
         - bundle install
       script:
         - bundle exec rspec
-
     - language: java
       script:
         - cd coderbyte/a_easy/java
